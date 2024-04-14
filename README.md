@@ -27,5 +27,5 @@ Deductions: (Optional) Enter any deductions.
 Age: Select your age group from the dropdown.
 Click the "Calculate Tax" button to see the tax calculation result.
 ### Tests Passing Screenshot
-![Tests Passing](202521.png)
+![Tests Passing](passingtest.png)
 
