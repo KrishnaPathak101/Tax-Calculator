@@ -16,7 +16,6 @@ To get a local copy of this project up and running, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/tax-calculator.git
-   ```bash
    cd tax-calculator
 2. Open the index.html file in your preferred web browser.
    
