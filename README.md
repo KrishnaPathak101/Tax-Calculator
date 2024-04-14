@@ -19,7 +19,7 @@ To get a local copy of this project up and running, follow these steps:
    ```bash
    cd tax-calculator
 2. Open the index.html file in your preferred web browser.
-   # Usage
+   
 1. Fill in the required fields in the tax calculator form:
 
 2. Gross Annual Income: Enter the gross annual income.
