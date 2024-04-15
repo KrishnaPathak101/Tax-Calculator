@@ -33,6 +33,6 @@ Click the "Calculate Tax" button to see the tax calculation result.
 ![](grossincome.png)
 ![](extraincome.png)
 ![](taxcalculation.png)
-
+![](taxresult.png)
 
 
