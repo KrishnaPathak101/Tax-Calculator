@@ -33,6 +33,6 @@ Click the "Calculate Tax" button to see the tax calculation result.
 ![](grossincome.png)
 ![](extraincome.png)
 ![](taxcalculation.png)
-![](/path/to/updatereadme/taxresult.png)
+![](taxresult.png)
 
 
