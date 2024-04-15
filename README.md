@@ -28,5 +28,6 @@ Age: Select your age group from the dropdown.
 Click the "Calculate Tax" button to see the tax calculation result.
 ### Tests Passing Screenshot
 ![Tests Passing](stringerro.png)
+![](stringcase.png)
 
 
