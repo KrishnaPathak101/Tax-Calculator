@@ -29,5 +29,10 @@ Click the "Calculate Tax" button to see the tax calculation result.
 ### Tests Passing Screenshot
 ![Tests Passing](stringerro.png)
 ![](stringcase.png)
+![](agegroup.png)
+![](grossincome.png)
+![](extraincome.png)
+![](taxcalculation.png)
+
 
 
