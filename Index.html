@@ -17,28 +17,24 @@
                 <div class="direct">
                     <label for="grossIncome">Gross Annual Income:</label>
                     <div class="tooltip">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                         </svg>
-                        <span class="tooltiptext">Gross annual income is the sum of your monthly income and your extra
-                            income. It does not include any deduction.</span>
+                        <span class="tooltiptext">Gross annual income is the sum of your monthly income and your extra income. It does not include any deduction.</span>
                     </div>
                 </div>
                 <div class="input-container">
                     <input type="text" class="form-control" placeholder="Enter Gross Annual Income" id="grossIncome" required>
                     <div class="error-icon" id="grossIncomeError">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
                         </svg>
-                        <span class="errortooltip">Please Enter Numbers Only.</span>
+                        <span class="errortooltip" id="grossIncomeTooltip" ></span>
                     </div>
                 </div>
             </div>
             <div class="form-group">
+                <!-- extraIncome -->
                 <div class="direct">
                     <label for="extraIncome">Extra Income:</label>
                     <div class="tooltip">
@@ -59,11 +55,12 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
                     </svg>
-                    <span class="errortooltip">Please Enter Numbers Only.</span>
+                    <span class="errortooltip" id="extraIncomeTooltip"></span>
                 </div>
             </div>
             </div>
             <div class="form-group">
+                <!-- deductions -->
                 <div class="direct">
                     <label for="deductions">Deductions:</label>
                     <div class="tooltip">
@@ -83,11 +80,12 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
                     </svg>
-                    <span class="errortooltip">Please Enter Numbers Only.</span>
+                    <span class="errortooltip" id="deductionsTooltip"></span>
                 </div>
             </div>
             </div>
             <div class="form-group">
+                <!-- age -->
                 <div class="direct">
                 <label for="age">Age:</label>
                 <div class="tooltip">
@@ -98,13 +96,24 @@
                     <span class="tooltiptext">Age is required.</span>
                 </div>
                 </div>
-                <select  class="form-control" id="age" required>
+                <div class="input-container">
+                <select  class="form-control" id="age" >
                     <option value="" disabled selected>Select Age Group</option>
-                    <option value="under40">Under 40</option>
-                    <option value="40to60">40 - 60</option>
-                    <option value="over60">Over 60</option>
+                    <option value="under40">&lt;40</option>
+                    <option value="40to60">&ge;40 &amp; &lt;60</option>
+                    <option value="over60">&ge;60</option>
                 </select>
-                <div class="error-icon" id="ageError" title="Age is required"></div>
+                
+                <div class="error-icon" id="ageError">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                </svg>
+                    <span class="errortooltip" id="ageErrorTooltip">Please Select Age Group.</span>
+                </div>
+            </div>
+
             </div>
             <button type="submit" class="btn btn-primary">Calculate Tax</button>
         </form>
